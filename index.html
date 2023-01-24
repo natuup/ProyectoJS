@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Kali Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <!-- ICONOS -->
+ <script src="https://kit.fontawesome.com/33f94b83d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <section><h1> Kali Store</h1></section>
+        <section>
+            <p>Tienda saludable, Blends de elaboración propia y artesanal </p>
+    
+            <form class="d-flex" role="Buscar">
+                <input type="Buscar" class="Buscador" placeholder="Buscar Productos" aria-label="Buscar Productos" > 
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+            </form>
+                <button class = "switch" id="switch">
+                    <span> <i class="fa-solid fa-sun"></i></span>
+                    <span> <i class="fa-solid fa-moon"></i></span>
+                </button>
+        </section>
+        <!-- NAVBAR -->
+           <div>
+                <nav class="main-nav" id="main-nav"> 
+                    <div class="container-fluid">
+                        <a class="icon-menu fa-solid fa-bars" class="navbar-brand" href="#"><i class="bi bi-pc-display-horizontal"></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="main-nav">
+                                <li class="menu__item">
+                                    <a class="nav-link active text-light" aria-current="page" href="../index.html" class="menu__link">INICIO</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="nav-link text-light" href="Sobrenosotros.html" class="menu__link">SOBRE NOSOTROS</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="nav-link text-light" href="Productos.html" class="menu__link">PRODUCTOS</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="nav-link text-light" href="Recetaskali.html" class="menu__link">RECETAS KALI</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="nav-link text-light" href="contacto.html" class="menu__link">CONTACTO</a>
+                                </li>
+                        
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+    </header>
+        <!-- TERMINA NAVBAR -->
+        
+    <div class ="contenedor">
+        <h3 class="titulo-productos">Nuestros Productos</h3>
+        <div class="tituloCatalogo">CATÁLOGO DE PRODUCTOS</div>
+        <div class="row" id="cards"></div>
+    </div>
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+            <div class="card shadow mb-4">
+                <img src="" alt="" class="img-card-top">
+                <div class="card-body">
+                    <h5>Titulo</h5>
+                    <p>precio</p>
+                    <button class="btn btn-primary">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </template>   
+    <template id="template-carrito">
+        <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span></span></td>
+        </tr>
+    </template>
+    
+    
+    
+    <template id="template-footer">
+        
+        <th scope="row" colspan="2">Total Productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar Carrito
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <h2 class="compras" > Carrito <i class="fa-solid fa-cart-shopping"></i> </i>
+    </h2>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Agregar/Disminuir</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+            <tr id="footer">
+                <th scope="row" colspan="5">Carrito Vacío</th>
+            </tr>
+        </tfoot>
+    </table>
+    <footer class="pie">
+        <div class="grupo-1">
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                <h4>Telefono:</h4>
+                <p>+54 11 5555-5555</p>
+                <h4>Email:</h4>
+                <p>emaildeprueba@gmail.com</p>
+            </div>
+            <div class="box2">
+                <h2>REDES SOCIALES</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/kalistorejcp" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/kalistorejcp/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="" target="_blank" class="fa fa-twitter"></a>
+                    <a href=""  target="_blank" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b></b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>    
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

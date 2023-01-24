@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "producto": "Te en hebras",
+      "precio": 420,
+      "descripción": "Naranja Allspice",
+      "categoría": "Alimentos",
+      "img": "img/naranjaallspice.jpg" 
+    },
+    {
+        "id": 2,
+        "producto": "Golden Milk",
+        "precio": 350,
+        "descripción": "Leche de curcuma",
+        "categoría": "Alimentos",
+        "img": "img/goldenmilk.jpg"
+    },
+    {
+        "id": 3,
+        "producto": "Te en hebras",
+        "precio": 250,
+        "descripción": "Manzanilla",
+        "categoría": "Alimentos",
+        "img": "img/manzanilla.jpg"
+    },
+    {
+        "id": 4,
+        "producto": "Te en hebras",
+        "precio": 450,
+        "descripción": "Te Chai",
+        "categoría": "Alimentos",
+        "img": "img/TeChai.jpeg"
+    },
+    {
+        "id": 5,
+        "producto": "Te en hebras",
+        "precio": 420,
+        "descripción": "Hibiscus",
+        "categoría": "Alimentos",
+        "img": "img/hibiscus.jpg"
+    },
+    {
+        "id": 6,
+        "producto": "paprika",
+        "precio": 200,
+        "descripción": "Paprika Húngara ",
+        "categoría": "Alimentos",
+        "img": "img/paprika.jpg"
+    },
+    {
+        "id": 7,
+        "producto": "Pimenton",
+        "precio": 200,
+        "descripción": "Pimenton Ahumado Español",
+        "categoría": "Alimentos",
+        "img": "img/ahumado.png"
+    },
+    {
+        "id": 8,
+        "producto": "Pimenton",
+        "precio": 200,
+        "descripción": "Pimenton Dulce Español",
+        "categoría": "Alimentos",
+        "img": "img/dulceespañol.png"
+    },
+    {
+        "id": 9,
+        "producto": "Cardamomo",
+        "precio": 350,
+        "descripción": "Semillas de Cardamomo",
+        "categoría": "Alimentos",
+        "img": "img/cardamomo.png"
+    },
+    {
+        "id": 10,
+        "producto": "Comino",
+        "precio": 150,
+        "descripción": "Semillas de comino",
+        "categoría": "Alimentos",
+        "img": "img/comino.jpg"
+    },
+    {
+        "id": 11,
+        "producto": "Curcuma",
+        "precio": 150,
+        "descripción": "Raiz de curcuma",
+        "categoría": "Alimentos",
+        "img": "img/curcuma.jpg"
+    },
+    {
+        "id": 12,
+        "producto": "Baharat",
+        "precio": 350,
+        "descripción": "7 especias Libanesas",
+        "categoría": "Alimentos",
+        "img": "img/baharat.png"
+    },
+    {
+        "id": 13,
+        "producto": "Curry",
+        "precio": 300,
+        "descripción": "Biryani Masala",
+        "categoría": "Alimentos",
+        "img": "img/Curry.jpeg"
+    },
+    {
+        "id": 14,
+        "producto": "Condimento mapuche",
+        "precio": 250,
+        "descripción": "Merkén",
+        "categoría": "Alimentos",
+        "img": "img/Merken.jpeg"
+    },
+    {
+        "id": 15,
+        "producto": "Mix de pimientos para salsa picante estilo magrebi",
+        "precio": 250,
+        "descripción": "Harissa",
+        "categoría": "Alimentos",
+        "img": "img/Harissa.jpeg"
+    }
+]
