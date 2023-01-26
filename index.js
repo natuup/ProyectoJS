@@ -1,3 +1,13 @@
+//modo oscuro
+let toggle=document.getElementById("toggle");
+let label_toggle=document.getElementById("label_toggle")
+
+toggle.addEventListener("change",(event) =>{
+    let checked=event.target.checked;
+    document.body.classList.toggle("dark");
+    
+})
+
 //Llamando elementos del DOM
 const cards = document.getElementById("cards")
 const items = document.getElementById("items")
@@ -48,7 +58,7 @@ items.addEventListener("click", e => {
 //Creando atributos de los productos
 const crearCards = data => {
     data.forEach(producto => {
-        templateCard.querySelector("h5").textContent = producto.title
+        templateCard.querySelector("h5").textContent = producto.descripción
         templateCard.querySelector("p").textContent = producto.precio
 //Estableciendo el valor del atributo con .setAttribute
         templateCard.querySelector("img").setAttribute("src", producto.img)
@@ -138,7 +148,19 @@ const crearFooter = () => {
         carrito = {}
         crearCarrito()
     })
+
+    // Finalizar compra
+    const btnfinalizarcompra =document.getElementById("finalizarcompra")
+    
+    btnfinalizarcompra.addEventListener ( "click", (_event) => {
+        _event.preventDefault()
+        carrito = {}
+        crearCarrito ()
+         
+    })
+       
 }
+
 
 //Constante para los botones sumar y restar
 const btnAccion = e => {
@@ -163,3 +185,12 @@ const btnAccion = e => {
 
     e.stopPropagation()
 }
+
+
+
+
+
+
+
+
+

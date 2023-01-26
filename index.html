@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali store</title>
     <!-- CSS only-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="IMG/favicon/favicon.ico" type="image/x-icon">
     <title>Kali Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-     <!-- ICONOS -->
- <script src="https://kit.fontawesome.com/33f94b83d6.js" crossorigin="anonymous"></script>
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/33f94b83d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+ <label for ="toggle" id="label_toggle"> <img class="icon-ligthDark" src="IMG/icons/day-and-night (1).png" alt="boton de dark mode"></label>
+ <input type="checkbox" id="toggle">
+ <div class =contenedor></div>
     <header>
-        <section><h1> Kali Store</h1></section>
+        <nav class="navbar navbar-expand-lg" id="bg_navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo-kali" src="IMG/favicon/WhatsApp Image 2023-01-23 at 8.17.38 PM (1).jpeg" alt="Logo de Kali store">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/conocenos.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/proyectos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/publicaciones.html">RECETAS KALI</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pages/contactanos.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         <section>
-            <p>Tienda saludable, Blends de elaboración propia y artesanal </p>
-    
             <form class="d-flex" role="Buscar">
                 <input type="Buscar" class="Buscador" placeholder="Buscar Productos" aria-label="Buscar Productos" > 
                 <button class="btn btn-outline-secondary" type="submit">Buscar</button>
             </form>
-                <button class = "switch" id="switch">
-                    <span> <i class="fa-solid fa-sun"></i></span>
-                    <span> <i class="fa-solid fa-moon"></i></span>
-                </button>
+                
         </section>
-        <!-- NAVBAR -->
-           <div>
-                <nav class="main-nav" id="main-nav"> 
-                    <div class="container-fluid">
-                        <a class="icon-menu fa-solid fa-bars" class="navbar-brand" href="#"><i class="bi bi-pc-display-horizontal"></i></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="main-nav">
-                                <li class="menu__item">
-                                    <a class="nav-link active text-light" aria-current="page" href="../index.html" class="menu__link">INICIO</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="nav-link text-light" href="Sobrenosotros.html" class="menu__link">SOBRE NOSOTROS</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="nav-link text-light" href="Productos.html" class="menu__link">PRODUCTOS</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="nav-link text-light" href="Recetaskali.html" class="menu__link">RECETAS KALI</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a class="nav-link text-light" href="contacto.html" class="menu__link">CONTACTO</a>
-                                </li>
-                        
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
     </header>
-        <!-- TERMINA NAVBAR -->
+    <!-- TERMINA NAVBAR -->
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMG/fotos/banner.jpg" class="d-block w-100" alt="foto de loritos forpus">
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/fotos/blends" class="d-block w-100" alt="foto de rana centrolene savagei">
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/fotos/te-chai" class="d-block w-100" alt="foto del venado de las Pampas">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
         
     <div class ="contenedor">
-        <h3 class="titulo-productos">Nuestros Productos</h3>
+        <h3 class="titulo-productos">Tienda saludable, Blends de elaboración propia y artesanal</h3>
         <div class="tituloCatalogo">CATÁLOGO DE PRODUCTOS</div>
         <div class="row" id="cards"></div>
     </div>
@@ -131,7 +156,24 @@
                 <th scope="row" colspan="5">Carrito Vacío</th>
             </tr>
         </tfoot>
+        <div class="row justify-content-center d-none" id="spinner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
     </table>
+        <form id="finalizarcompra">
+            <label></label>
+                <div class="row justify-content-between">
+                    <div class="col-xs-12 col-md-4">
+                        <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra">
+                    </div>
+                </div>
+        </form>
+        
+    </table>
+        
     <footer class="pie">
         <div class="grupo-1">
             <div class="box">
@@ -146,8 +188,6 @@
                 <div class="red-social">
                     <a href="https://www.facebook.com/kalistorejcp" target="_blank" class="fa fa-facebook"></a>
                     <a href="https://www.instagram.com/kalistorejcp/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="" target="_blank" class="fa fa-twitter"></a>
-                    <a href=""  target="_blank" class="fa fa-youtube"></a>
                 </div>
             </div>
         </div>
@@ -156,6 +196,7 @@
         </div>
     </footer>    
     <script src="index.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     
 </body>
 
